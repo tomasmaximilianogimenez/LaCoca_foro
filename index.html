@@ -18,154 +18,216 @@
 
 </head>
 
-
 <body>
 
 
-    <!-- PERFIL / LOGIN -->
-
-    <div class="usuario_box">
+    <div class="pagina">
 
 
-        <!-- NO LOGUEADO -->
+        <div class="usuario_box">
 
-        <div id="usuarioNoLogueado">
+            <div id="usuarioNoLogueado">
 
-            <button id="botonGoogle">
-                Iniciar sesión con Google
-            </button>
+                <button id="botonGoogle">
+                    Iniciar sesión con Google
+                </button>
+
+            </div>
+
+
+            <div id="usuarioLogueado"
+                style="display: none;">
+
+                <img id="fotoUsuario"
+                    class="foto_usuario">
+
+                <span id="nombreUsuario">
+                </span>
+
+                <button id="botonEditarPerfil">
+                    Editar perfil
+                </button>
+
+                <button id="botonCerrarSesion">
+                    Cerrar sesión
+                </button>
+
+            </div>
+
+
+            <div id="editorPerfil"
+                class="editor_perfil"
+                style="display: none;">
+
+                <h3>
+                    Editar perfil
+                </h3>
+
+                <img id="vistaFotoPerfil"
+                    class="foto_perfil_editor">
+
+                <input
+                    type="file"
+                    id="inputFotoPerfil"
+                    accept="image/*"
+                >
+
+                <input
+                    type="text"
+                    id="inputNombrePerfil"
+                    placeholder="Nombre de usuario"
+                    maxlength="30"
+                >
+
+                <textarea
+                    id="inputBiografia"
+                    placeholder="Biografía"
+                    maxlength="150">
+                </textarea>
+
+                <button id="botonGuardarPerfil">
+                    Guardar perfil
+                </button>
+
+                <button id="botonCancelarPerfil">
+                    Cancelar
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="Card">
+
+            <h1 class="titulo">
+                la Coca
+            </h1>
+
+            <h2 class="subtitulo">
+                Foro Website
+            </h2>
+
+            <p class="descripcion">
+            </p>
 
         </div>
 
 
-        <!-- LOGUEADO -->
+        <div class="contenido">
 
-        <div id="usuarioLogueado"
-            style="display: none;">
 
-            <img id="fotoUsuario"
-                class="foto_usuario">
+            <div class="columna_izquierda">
 
-            <span id="nombreUsuario">
-            </span>
+                <div class="Indormation_box">
+            <div class="informacion_extra">
 
-            <button id="botonEditarPerfil">
-                Editar perfil
-            </button>
+    <div class="informacion_extra">
 
-            <button id="botonCerrarSesion">
-                Cerrar sesión
-            </button>
-
+        <div class="texto_musica">
+            ♫ NOW PLAYING
         </div>
 
+        <div class="music_hud">
 
-        <!-- EDITAR PERFIL -->
+            <button id="playMusica">▶</button>
+            <button id="pauseMusica">⏸</button>
 
-        <div id="editorPerfil"
-            class="editor_perfil"
-            style="display: none;">
-
-            <h3>
-                Editar perfil
-            </h3>
-
-
-            <img id="vistaFotoPerfil"
-                class="foto_perfil_editor">
-
-
-            <input
-                type="file"
-                id="inputFotoPerfil"
-                accept="image/*"
-            >
-
-
-            <input
-                type="text"
-                id="inputNombrePerfil"
-                placeholder="Nombre de usuario"
-                maxlength="30"
-            >
-
-
-            <textarea
-                id="inputBiografia"
-                placeholder="Biografía"
-                maxlength="150">
-            </textarea>
-
-
-            <button id="botonGuardarPerfil">
-                Guardar perfil
-            </button>
-
-
-            <button id="botonCancelarPerfil">
-                Cancelar
-            </button>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- CABECERA -->
-
-    <div class="Card">
-
-        <h1 class="titulo">
-            la Coca
-        </h1>
-
-        <h2 class="subtitulo">
-            Foro Website
-        </h2>
-
-        <p class="descripcion">
-            _________________________________________________
-        </p>
-
-    </div>
-
-
-
-    <div class="Indormation_box">
-    </div>
-
-
-
-    <!-- FORO -->
-
-    <div class="box_cuestions">
-
-
+        <span>🔊</span>
         <input
-            type="text"
-            id="mensaje"
-            placeholder="Iniciá sesión para escribir"
-            disabled
+            type="range"
+            id="volumenMusica"
+            min="0"
+            max="100"
+            value="50"
         >
 
+    </div>
 
-        <button
-            id="botonPublicar"
-            disabled
-        >
-            Publicar
-        </button>
+        <div id="youtubeMusica"></div>
+
+    </div>
+
+            </div>
+                </div>
 
 
-        <div id="foro"></div>
+                <div class="pet_box">
+
+                    <iframe
+                        scrolling="no"
+                        src="https://gify.pet/pet/pet.html?name=Link&dob=1788812110&gender=m&element=Earth&pet=https%3A%2F%2Fstatic.wikia.nocookie.net%2Fzelda_gamepedia_en%2Fimages%2F9%2F90%2FDeku_Link_3D.png%2Frevision%2Flatest%3Fcb%3D20100906183948&map=forest.jpg&background=https%3A%2F%2Fimgs.search.brave.com%2F50BjKV40Fo6rR4aX7prhhoQD_kv5AzluFdkxJj_Vsfw%2Frs%3Afit%3A500%3A0%3A1%3A0%2Fg%3Ace%2FaHR0cHM6Ly9pbWcu%2FbWFnbmlmaWMuY29t%2FL2ZvdG9zLXByZW1p%2FdW0vZXN0cmVsbGFz%2FLWZvcm1hcy12ZXJk%2FZXMtZm9uZG8tbmVn%2Fcm8taW1hZ2VuLWFi%2Fc3RyYWN0YS10ZXh0%2FdXJhLXBhdHJvbi10%2FYXBhLXBhcmVkLWN1%2FYmllcnRhXzg2NzY3%2FMS0yOTIwNi5qcGc_%2Fc2VtdD1haXNfaHli%2FcmlkJnc9NzQwJnE9%2FODA&tablecolor=%233a3636&textcolor=white"
+                        frameborder="0">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+            <div class="columna_derecha">
+
+                <div class="box_cuestions">
+
+                    <input
+                        type="text"
+                        id="mensaje"
+                        placeholder="Iniciá sesión para escribir"
+                        disabled
+                    >
+
+                    <button
+                        id="botonPublicar"
+                        disabled
+                    >
+                        Publicar
+                    </button>
+
+                    <div id="foro">
+                    </div>
+
+                </div>
+
+
+                <div class="informacion_extra">
+                    <div class="texto_movil">
+                        <span>¡Bienvenidos a la Coca.Website! ★ Nuevo foro ★ --- La Coca esta re falopa man te ayudamos a rescatarte --- Unite a la comuna pibe --- </span>
+                        <span>¡Bienvenidos a la Coca.Website! ★ Nuevo foro ★ --- La Coca esta re falopa man te ayudamos a rescatarte --- Unite a la comuna pibe --- </span>
+                        <span>¡Bienvenidos a la Coca.Website! ★ Nuevo foro ★ --- La Coca esta re falopa man te ayudamos a rescatarte --- Unite a la comuna pibe --- </span>
+                    </div>
+
+                    <div class="gifs">
+                        <img src="flamingo.gif">
+                        <img src="buton0.gif">
+                        <img src="button-doit.png">
+                        <img src="button3.gif">
+                        <img src="quesadillawizard.png">
+                        <img src="ralseismokingadart.gif">
+                        <img src="singaporebutton.gif">
+                        <img src="stockinganarchy.png">
+                        <img src="ffixsource.gif">
+                        <img src="microsoft_internet.gif">
+                        <img src="psbutton.gif">
+                        <img src="punch_out_88x31.gif">
+                        <img src="subculture8831.gif">
+                        <img src="plasticcat.png">
+                        <img src="149.png">
+
+                    </div>
+
+                </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
 
 
     </div>
 
-
-
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 
 </body>
 
