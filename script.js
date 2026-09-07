@@ -83,7 +83,7 @@ botonGoogle.addEventListener(
                 options: {
 
                     redirectTo:
-                        window.location.origin
+                        "https://tomasmaximilianogimenez.github.io/"
 
                 }
 
