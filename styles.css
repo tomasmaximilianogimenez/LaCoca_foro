@@ -1,0 +1,138 @@
+body {
+    font-family: url(Fonts/Newsreader/Newsreader-Italic-VariableFont_opsz\,wght.ttf);
+    background-color: #595135;
+    font-family: sans-serif;
+    color: #817e6b;
+}
+
+.Card {
+    background-color: #303725;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.titulo {
+    font-size: 100px;
+    margin: 5px 10px;
+    padding: 0px;
+}
+
+.subtitulo {
+    font-size: 30px;
+    margin: 3px;
+    padding-top: 0px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+.descripcion {
+    font-size: 15px;
+    margin: 50px 10px 10px 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: transparent;
+}
+
+#mensaje {
+    margin: 0;
+    padding: 8px 20px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    border-top: 1px solid rgba(0, 0, 0, 0.705);
+    border-left: 1px solid rgba(0, 0, 0, 0.705);
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+}
+
+.box_cuestions {
+    background-image: url(depositphotos_24493081-stock-photo-old-paper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    gap: 8px;
+
+    color: black;
+}
+
+button {
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#foro {
+    grid-column: 1 / -1;
+    min-height: 0;
+    height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: left;
+    color: black;
+}
+
+#foro::-webkit-scrollbar {
+    width: 7px;
+}
+
+#foro::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#foro::-webkit-scrollbar-thumb {
+    background: rgba(48, 55, 37, 0.45);
+    border-radius: 10px;
+}
+
+#foro::-webkit-scrollbar-thumb:hover {
+    background: rgba(48, 55, 37, 0.7);
+}
+
+#mensaje {
+    margin: 0 auto;
+    padding: 8px 20px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    border-top: 1px solid rgba(0, 0, 0, 0.705);
+    border-left: 1px solid rgba(0, 0, 0, 0.705);
+    width: 75%;
+    box-sizing: border-box;
+    color: black;
+}
+
+.fecha {
+    font-size: 12px;
+    opacity: 0.7;
+    display: block;
+    margin-top: 5px;
+}
