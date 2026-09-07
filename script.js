@@ -83,7 +83,7 @@ botonGoogle.addEventListener(
                 options: {
 
                     redirectTo:
-                        "https://tomasmaximilianogimenez.github.io/"
+                        "https://tomasmaximilianogimenez.github.io/LaCoca_foro/"
 
                 }
 
