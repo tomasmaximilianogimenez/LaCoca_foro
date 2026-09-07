@@ -2,46 +2,167 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <title>laCoca.Website</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="styles.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+    </script>
+
 </head>
+
 
 <body>
 
+
+    <!-- PERFIL / LOGIN -->
+
+    <div class="usuario_box">
+
+
+        <!-- NO LOGUEADO -->
+
+        <div id="usuarioNoLogueado">
+
+            <button id="botonGoogle">
+                Iniciar sesión con Google
+            </button>
+
+        </div>
+
+
+        <!-- LOGUEADO -->
+
+        <div id="usuarioLogueado"
+            style="display: none;">
+
+            <img id="fotoUsuario"
+                class="foto_usuario">
+
+            <span id="nombreUsuario">
+            </span>
+
+            <button id="botonEditarPerfil">
+                Editar perfil
+            </button>
+
+            <button id="botonCerrarSesion">
+                Cerrar sesión
+            </button>
+
+        </div>
+
+
+        <!-- EDITAR PERFIL -->
+
+        <div id="editorPerfil"
+            class="editor_perfil"
+            style="display: none;">
+
+            <h3>
+                Editar perfil
+            </h3>
+
+
+            <img id="vistaFotoPerfil"
+                class="foto_perfil_editor">
+
+
+            <input
+                type="file"
+                id="inputFotoPerfil"
+                accept="image/*"
+            >
+
+
+            <input
+                type="text"
+                id="inputNombrePerfil"
+                placeholder="Nombre de usuario"
+                maxlength="30"
+            >
+
+
+            <textarea
+                id="inputBiografia"
+                placeholder="Biografía"
+                maxlength="150">
+            </textarea>
+
+
+            <button id="botonGuardarPerfil">
+                Guardar perfil
+            </button>
+
+
+            <button id="botonCancelarPerfil">
+                Cancelar
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CABECERA -->
+
     <div class="Card">
 
-        <h1 class="titulo">la Coca</h1>
+        <h1 class="titulo">
+            la Coca
+        </h1>
 
-        <h2 class="subtitulo">Foro Website</h2>
+        <h2 class="subtitulo">
+            Foro Website
+        </h2>
 
         <p class="descripcion">
-            ______________________________________
+            _________________________________________________
         </p>
 
     </div>
-    <div class="Indormation_box">   
-        
+
+
+
+    <div class="Indormation_box">
     </div>
 
+
+
+    <!-- FORO -->
+
     <div class="box_cuestions">
+
 
         <input
             type="text"
             id="mensaje"
-            placeholder="Escribí un mensaje"
+            placeholder="Iniciá sesión para escribir"
+            disabled
         >
 
-        <button id="botonPublicar">Publicar</button>
+
+        <button
+            id="botonPublicar"
+            disabled
+        >
+            Publicar
+        </button>
+
 
         <div id="foro"></div>
 
+
     </div>
+
 
 
     <script src="script.js"></script>
